@@ -128,3 +128,7 @@ color: #ededed;
 font-size:  10rem;
 top: 50px;
 }
+
+.wrapper {
+    border: 1px solid blue;
+}
