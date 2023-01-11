@@ -1,6 +1,7 @@
 
 :root {
   --colorMain: rgb(239, 232, 232);
+  --colorMain-dark: rgb(193, 188, 188);
  /* --colorSecond: #666;
  --colorBgMain:  #fff;
  --colorBgSecond: #F0F0F0;
@@ -90,7 +91,6 @@ a {
  text-decoration: none;
  margin: 0;
  font-weight: 300;
- color: #ddd;
 }
 
 /* a:hover,
@@ -135,11 +135,14 @@ top: 50px;
 button {
     min-height: 10rem;
     font-size: 300%;
+    background-color: var(--colorMain);
 }
 
 button:hover {
     cursor: pointer;
+    background-color: var(--colorMain-dark);
 }
+
 .memory-display {
     border: 1px solid blue;
     --min: 10rem;
