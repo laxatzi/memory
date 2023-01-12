@@ -24,6 +24,7 @@ html {
  box-sizing: border-box;
  font-size: 62.5%;
  scroll-behavior: smooth;
+ height: 100%;
 }
 
 
@@ -34,8 +35,7 @@ html {
 }
 
 body {
- margin: 0;
- padding: 0;
+ height: 100%;
  color: var(--colorMain);
  background: rgb(1,64,160);
 background: linear-gradient(68deg, rgba(1,64,160,1) 0%, rgba(1,64,160,1) 65%, rgba(25,100,218,1) 100%);
@@ -142,7 +142,7 @@ button:hover {
 .memory-display {
   border: 1px solid lightgreen;
    max-width: 42rem;
-  margin: 50px auto;
+  margin: 50px auto 0;
   --min: 10rem;
   --gap: .25rem;
   display: grid;
