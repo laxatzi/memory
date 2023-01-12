@@ -34,7 +34,7 @@ html {
 }
 
 body {
- margin: 0px;
+ margin: 0;
  padding: 0;
  color: var(--colorMain);
  background: rgb(1,64,160);
@@ -44,13 +44,11 @@ background: linear-gradient(68deg, rgba(1,64,160,1) 0%, rgba(1,64,160,1) 65%, rg
  text-shadow: 0, 2px, 0 rgba(0,0,0, .07);
  -webkit-overflow-scrolling: touch;
  overflow-y: scroll;
- border: 1px solid yellow;
 }
 
 section {
   scroll-margin-top: .75em;
 }
-
 
 h1,
 h2,
@@ -134,13 +132,17 @@ button:hover {
   cursor: pointer;
   background-color: var(--colorMain-dark);
 }
-.memory-wrapper {
-  max-width: 40em;
-  display: block;
-  margin: 50px auto;
-}
-.memory-display {
 
+/* .memory-wrapper {
+
+  display: block;
+
+  border: 1px solid orange;
+} */
+.memory-display {
+  border: 1px solid lightgreen;
+   max-width: 42rem;
+  margin: 50px auto;
   --min: 10rem;
   --gap: .25rem;
   display: grid;
