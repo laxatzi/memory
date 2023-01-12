@@ -2,10 +2,6 @@
 :root {
   --colorMain: rgb(239, 232, 232);
   --colorMain-dark: rgb(193, 188, 188);
- /* --colorSecond: #666;
- --colorBgMain:  #fff;
- --colorBgSecond: #F0F0F0;
- --colorDistinct: #F47E00; */
 }
 
 *,
@@ -22,11 +18,6 @@
 /**
  * Layout
  */
-body {
-	margin: 0 auto;
-	max-width: 40em;
-	width: 88%;
-}
 
 
 html {
@@ -43,7 +34,7 @@ html {
 }
 
 body {
- margin: 50px auto;
+ margin: 0px;
  padding: 0;
  color: var(--colorMain);
  background: rgb(1,64,160);
@@ -53,6 +44,7 @@ background: linear-gradient(68deg, rgba(1,64,160,1) 0%, rgba(1,64,160,1) 65%, rg
  text-shadow: 0, 2px, 0 rgba(0,0,0, .07);
  -webkit-overflow-scrolling: touch;
  overflow-y: scroll;
+ border: 1px solid yellow;
 }
 
 section {
@@ -133,22 +125,26 @@ top: 50px;
 
 
 button {
-    min-height: 10rem;
-    font-size: 300%;
-    background-color: var(--colorMain);
+  min-height: 10rem;
+  font-size: 300%;
+  background-color: var(--colorMain);
 }
 
 button:hover {
-    cursor: pointer;
-    background-color: var(--colorMain-dark);
+  cursor: pointer;
+  background-color: var(--colorMain-dark);
 }
-
+.memory-wrapper {
+  max-width: 40em;
+  display: block;
+  margin: 50px auto;
+}
 .memory-display {
-    border: 1px solid blue;
-    --min: 10rem;
-    --gap: .25rem;
-    display: grid;
-    grid-gap: var(--gap);
-    /* min() width 100% prevents overflow in extra narrow spaces */
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+
+  --min: 10rem;
+  --gap: .25rem;
+  display: grid;
+  grid-gap: var(--gap);
+  /* min() width 100% prevents overflow in extra narrow spaces */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
 }
