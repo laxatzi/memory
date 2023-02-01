@@ -1,4 +1,4 @@
-const memory_cards = document.querySelectorAll('[data-emoji]');
+const memory_cards = document.querySelectorAll('.js-button');
 
 memory_cards.forEach((button) => {
     button.addEventListener(('click'), () => {
