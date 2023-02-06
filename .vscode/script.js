@@ -1,7 +1,10 @@
-const memory_cards = document.querySelectorAll('.js-button');
+const cards = document.querySelectorAll('.js-button');
+const emojies = document.querySelectorAll('.js-emoji');
 
-memory_cards.forEach((button) => {
-    button.addEventListener(('click'), () => {
-        console.log(button.innerText);
+cards.forEach((card) => {
+    card.addEventListener(('click'), () => {
+        emojies.forEach((emoji) => {
+          console.log('hi');
+        });
     });
 });

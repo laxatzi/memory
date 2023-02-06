@@ -122,15 +122,16 @@ top: 50px;
 }
 
 
-button {
+button.card {
   min-height: 10rem;
   background-color: var(--colorMain);
+  opacity: 1;
 }
 
-button .card-container {
+button.card .card-container {
   font-size: 3em;
 }
-button:hover {
+button.card:hover {
   cursor: pointer;
   background-color: var(--colorMain-dark);
 }
@@ -142,11 +143,11 @@ button:hover {
   border: 1px solid orange;
 } */
 .memory-display {
-  border: 1px solid lightgreen;
+  background-color: orange;
    max-width: 42rem;
   margin: 50px auto 0;
   --min: 10rem;
-  --gap: .25rem;
+  --gap: .45rem;
   display: grid;
   grid-gap: var(--gap);
   /* min() width 100% prevents overflow in extra narrow spaces */
