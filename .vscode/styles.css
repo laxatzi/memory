@@ -122,20 +122,25 @@ top: 50px;
 }
 
 
-button.card {
+.card {
   min-height: 10rem;
   background-color: var(--colorMain);
   opacity: 1;
 }
 
-button.card .card-container {
+.card .card-container {
   font-size: 3em;
+  opacity: 0;
 }
-button.card:hover {
+
+.card:hover {
   cursor: pointer;
   background-color: var(--colorMain-dark);
 }
 
+#js-opacity1 {
+  opacity: 1;
+}
 /* .memory-wrapper {
 
   display: block;
