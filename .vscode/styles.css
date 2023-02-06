@@ -124,10 +124,12 @@ top: 50px;
 
 button {
   min-height: 10rem;
-  font-size: 300%;
   background-color: var(--colorMain);
 }
 
+button p {
+  font-size: 3em;
+}
 button:hover {
   cursor: pointer;
   background-color: var(--colorMain-dark);
