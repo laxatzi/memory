@@ -127,7 +127,7 @@ button {
   background-color: var(--colorMain);
 }
 
-button p {
+button .card-container {
   font-size: 3em;
 }
 button:hover {
