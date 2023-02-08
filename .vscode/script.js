@@ -14,6 +14,6 @@ const emojies = document.querySelectorAll('.js-emoji');
 cards.forEach((card) => {
   card.addEventListener('click', function() {
 
-    card.style.backgroundColor = 'grey';
+    document.getElementsByClassName('js-emoji').style.opacity = 1;
   });
 });
