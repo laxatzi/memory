@@ -1,5 +1,5 @@
-const cards = document.querySelectorAll('.js-button');
-const emojies = document.querySelectorAll('.js-emoji');
+const card_containers = document.querySelectorAll('.js-card-container');
+const cards = document.querySelectorAll('.js-card');
 
 // const targetDiv = document.getElementById("third");
 // const btn = document.getElementById("toggle");
@@ -11,9 +11,11 @@ const emojies = document.querySelectorAll('.js-emoji');
 //   }
 // };
 
+let countOpenCards = 0;
+
 cards.forEach((card) => {
   card.addEventListener('click', function() {
-
-    document.getElementsByClassName('js-emoji').style.opacity = 1;
+     card.style.backgroundColor = 'transparent';
+     countOpenCards = countOpenCards + 1;
   });
 });
